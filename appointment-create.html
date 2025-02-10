@@ -1,0 +1,36 @@
+<form id="appointmentForm">
+    <div class="form-group">
+        <label for="departmentSelect">选择科室</label>
+        <select class="form-control" id="departmentSelect" required>
+            <!-- 科室选项通过JavaScript动态加载 -->
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="doctorSelect">选择医生</label>
+        <select class="form-control" id="doctorSelect" required disabled>
+            <option value="">请先选择科室</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="patientSelect">选择患者</label>
+        <select class="form-control" id="patientSelect" required>
+            <!-- 患者选项通过JavaScript动态加载 -->
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="appointmentDate">预约日期</label>
+        <input type="date" class="form-control" id="appointmentDate" required>
+    </div>
+
+    <div class="form-group">
+        <label for="appointmentTime">预约时间</label>
+        <select class="form-control" id="appointmentTime" required>
+            <!-- 可用时间段通过JavaScript动态加载 -->
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">提交预约</button>
+</form>
