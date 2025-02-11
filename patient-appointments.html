@@ -1,0 +1,36 @@
+<!-- 在患者信息表格中添加查看预约记录按钮 -->
+<td>
+    <button type="button" class="btn btn-info btn-sm" onclick="showAppointmentHistory('${patient.id}')"
+        data-toggle="modal" data-target="#appointmentHistoryModal">
+        查看预约记录
+    </button>
+</td>
+
+<!-- 预约记录模态框 -->
+<div class="modal fade" id="appointmentHistoryModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">预约记录</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>预约日期</th>
+                            <th>医生</th>
+                            <th>科室</th>
+                            <th>状态</th>
+                        </tr>
+                    </thead>
+                    <tbody id="appointmentHistoryTable">
+                        <!-- 预约记录会通过JavaScript动态生成 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="patient-appointments.js"></script>

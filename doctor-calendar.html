@@ -1,0 +1,27 @@
+<div class="container">
+    <h2>医生日程安排</h2>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button class="btn btn-outline-primary" onclick="previousWeek()">上周</button>
+            <span id="currentWeek">当前周</span>
+            <button class="btn btn-outline-primary" onclick="nextWeek()">下周</button>
+        </div>
+        <div class="calendar-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>时间</th>
+                        <th>周一</th>
+                        <th>周二</th>
+                        <th>周三</th>
+                        <th>周四</th>
+                        <th>周五</th>
+                    </tr>
+                </thead>
+                <tbody id="scheduleTable">
+                    <!-- 日程表会通过JavaScript动态生成 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
